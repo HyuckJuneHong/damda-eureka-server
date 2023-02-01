@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: damdadiscovery
+    name: damda-discovery
 
 eureka:
   client:
