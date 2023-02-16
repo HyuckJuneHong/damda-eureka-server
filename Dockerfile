@@ -8,6 +8,6 @@ VOLUME /tmp
 #주의할 점 : Dockerfile과 복사할 파일은 동일 위치에 있어야 한다.
 COPY build/libs/damda-discovery-0.0.1-SNAPSHOT.jar damda-discovery.jar
 
-#jar 파일을 실행하는 명령어(java -jar jar파일)
+#jar 파일을 실행하는 명령어(java -jar ja  r파일)
 ENTRYPOINT ["java", "-jar", "damda-discovery.jar"]
 
