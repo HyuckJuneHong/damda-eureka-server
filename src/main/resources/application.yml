@@ -1,4 +1,15 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
 spring:
+  application:
+    name: damda-discovery
+
   profiles:
     active: local
 
@@ -7,4 +18,5 @@ spring:
       name: damda-discovery
 
   config:
-    import: optional:configserver:http://localhost:8888/
+    import: optional:configserver:http://127.0.0.1:8888/
+#    import: optional:configserver:http://damda-config:8888/
